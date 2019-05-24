@@ -8,10 +8,12 @@ body {
 h1 {
   font-size: 3rem;
   margin: 40px 20px 20px 20px;
+  border-bottom: #000000 3px solid;
 }
 
 nav {
   text-align: right;
+  padding-bottom: 5px;
 }
 
 nav h3 {
@@ -23,12 +25,14 @@ nav h3 {
 ul {
   float: right;
   margin: 0 20px 30px 0;
+  border-bottom: #000000 2px solid;
 }
 
 li {
   list-style: none;
   float: left;
   margin-right: 20px;
+  padding-bottom: 6px;
 }
 
 button {
@@ -36,7 +40,12 @@ button {
   border-radius: 4px;
   width: 30%;
   text-align: center;
-  margin: 0 40% 0 40%;
+  margin: 0 0 2% 0;
+}
+
+button:hover {
+  cursor: pointer;
+  font-style: italic;
 }
 
 a {
@@ -44,5 +53,23 @@ a {
   color: inherit;
   text-align: center;
   font-size: 1.3rem;
+  padding: 2px 2px 2px 2px;
+  border: #E1C699 solid 3px;
+  border-radius: 3px;
   /*margin: 2% 50% 0 50%;*/
+}
+
+a:hover {
+  font-style: italic;
+  border: #ff00ff solid 3px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.activity {
+  text-align: center;
+}
+
+.activity a {
+  font-size: 1.4rem;
 }

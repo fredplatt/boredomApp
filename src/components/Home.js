@@ -19,7 +19,7 @@ class Home extends React.Component {
         }
 
         return (
-            <div>
+            <div className="activity">
                 <button onClick={getThingToDo}>Or have something completely random!</button>
                 <a href={"https://www.google.com/search?q=" + this.state.activity}>{this.state.activity}</a>
             </div>
