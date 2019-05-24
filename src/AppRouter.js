@@ -4,6 +4,13 @@ import './App.css';
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import Educational from './components/Educational'
 import Recreational from './components/Recreational'
+import Social from './components/Social'
+import Diy from './components/Diy'
+import Charity from './components/Charity'
+import Cooking from './components/Cooking'
+import Relaxation from './components/Relaxation'
+import Music from './components/Music'
+import Busywork from './components/Busywork'
 
 function AppRouter() {
   return (
@@ -47,20 +54,16 @@ function AppRouter() {
           <Route path="/" exact />
           <Route path="/educational/" component={Educational} />
           <Route path="/recreational/" component={Recreational} />
-          {/*<Route path="/social/" component={Social} />*/}
-          {/*<Route path="/diy/" component={Diy} />*/}
-          {/*<Route path="/charity/" component={Charity} />*/}
-          {/*<Route path="/cooking/" component={Cooking} />*/}
-          {/*<Route path="/relaxation/" component={Relaxation} />*/}
-          {/*<Route path="/music/" component={Music} />*/}
-          {/*<Route path="/busywork/" component={Busywork} />*/}
+          <Route path="/social/" component={Social} />
+          <Route path="/diy/" component={Diy} />
+          <Route path="/charity/" component={Charity} />
+          <Route path="/cooking/" component={Cooking} />
+          <Route path="/relaxation/" component={Relaxation} />
+          <Route path="/music/" component={Music} />
+          <Route path="/busywork/" component={Busywork} />
         </div>
       </Router>
   );
 }
 
 export default AppRouter;
-
-
-
-//education", "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"
