@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import Educational from './components/Educational'
 
 function AppRouter() {
   return (
@@ -13,7 +14,7 @@ function AppRouter() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/education/">Educational</Link>
+                <Link to="/educational/">Educational</Link>
               </li>
               <li>
                 <Link to="/recreational/">Recreational</Link>
@@ -43,15 +44,15 @@ function AppRouter() {
           </nav>
 
           <Route path="/" exact />
-          <Route path="/education/" component={Educational} />
-          <Route path="/recreational/" component={Recreational} />
-          <Route path="/social/" component={Social} />
-          <Route path="/diy/" component={Diy} />
-          <Route path="/charity/" component={Charity} />
-          <Route path="/cooking/" component={Cooking} />
-          <Route path="/relaxation/" component={Relaxation} />
-          <Route path="/music/" component={Music} />
-          <Route path="/busywork/" component={Busywork} />
+          <Route path="/educational/" component={Educational} />
+          {/*<Route path="/recreational/" component={Recreational} />*/}
+          {/*<Route path="/social/" component={Social} />*/}
+          {/*<Route path="/diy/" component={Diy} />*/}
+          {/*<Route path="/charity/" component={Charity} />*/}
+          {/*<Route path="/cooking/" component={Cooking} />*/}
+          {/*<Route path="/relaxation/" component={Relaxation} />*/}
+          {/*<Route path="/music/" component={Music} />*/}
+          {/*<Route path="/busywork/" component={Busywork} />*/}
         </div>
       </Router>
   );
