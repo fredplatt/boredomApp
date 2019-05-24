@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, Link} from "react-router-dom"
+import Home from './components/Home'
 import Educational from './components/Educational'
 import Recreational from './components/Recreational'
 import Social from './components/Social'
@@ -16,7 +17,9 @@ function AppRouter() {
   return (
       <Router>
         <div>
+          <h1>ByeByeBoredom</h1>
           <nav>
+            <h3>Choose a category</h3>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -51,7 +54,7 @@ function AppRouter() {
             </ul>
           </nav>
 
-          <Route path="/" exact />
+          <Route path="/" exact component={Home}/>
           <Route path="/educational/" component={Educational} />
           <Route path="/recreational/" component={Recreational} />
           <Route path="/social/" component={Social} />
@@ -67,3 +70,4 @@ function AppRouter() {
 }
 
 export default AppRouter;
+
