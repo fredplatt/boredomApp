@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import Educational from './components/Educational'
+import Recreational from './components/Recreational'
 
 function AppRouter() {
   return (
@@ -45,7 +46,7 @@ function AppRouter() {
 
           <Route path="/" exact />
           <Route path="/educational/" component={Educational} />
-          {/*<Route path="/recreational/" component={Recreational} />*/}
+          <Route path="/recreational/" component={Recreational} />
           {/*<Route path="/social/" component={Social} />*/}
           {/*<Route path="/diy/" component={Diy} />*/}
           {/*<Route path="/charity/" component={Charity} />*/}

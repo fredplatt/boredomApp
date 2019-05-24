@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Educational extends React.Component {
+class Recreational extends React.Component {
     constructor(props){
         super(props)
         this.state = {
@@ -9,9 +9,8 @@ class Educational extends React.Component {
     }
 
     render() {
-
         const getThingToDo = () => {
-            fetch('http://www.boredapi.com/api/activity?type=education')
+            fetch('http://www.boredapi.com/api/activity?type=recreational')
                 .then((data)=>{return data.json()})
                 .then((data)=>{
                     const thingToDo = (data.activity)
@@ -28,4 +27,4 @@ class Educational extends React.Component {
     }
 }
 
-export default Educational
+export default Recreational
