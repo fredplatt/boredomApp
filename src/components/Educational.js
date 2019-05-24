@@ -9,7 +9,6 @@ class Educational extends React.Component {
     }
 
     render() {
-
         const getThingToDo = () => {
             fetch('http://www.boredapi.com/api/activity?type=education')
                 .then((data)=>{return data.json()})
@@ -22,7 +21,7 @@ class Educational extends React.Component {
         return (
             <div>
                 <button onClick={getThingToDo}>Inspire me!</button>
-                <h2>{this.state.activity}</h2>
+                <a href={"https://www.google.com/search?q=" + this.state.activity}>{this.state.activity}</a>
             </div>
         )
     }
