@@ -2,13 +2,15 @@
 
 body {
   font-family: "Lucida Grande";
-  background-color: #E1C699;
+  background-color: #F7D002;
+  color: #454E9E;
+  font-weight: bold;
 }
 
 h1 {
   font-size: 3rem;
   margin: 40px 20px 20px 20px;
-  border-bottom: #000000 3px solid;
+  border-bottom: #454E9E 3px solid;
 }
 
 nav {
@@ -25,7 +27,7 @@ nav h3 {
 ul {
   float: right;
   margin: 0 20px 30px 0;
-  border-bottom: #000000 2px solid;
+  border-bottom: #454E9E 2px solid;
 }
 
 li {
@@ -36,34 +38,44 @@ li {
 }
 
 button {
-  font-size: 1.4rem;
-  border-radius: 4px;
+  font-size: 1.6rem;
+  border-radius: 17px;
+  border: #454E9E 2px solid;
   width: 30%;
+  height: 100px;
   text-align: center;
-  margin: 0 0 2% 0;
+  margin: 2% 0 6% 0;
+  background-color: #AD343e;
+  color: #F7D002;
 }
 
 button:hover {
   cursor: pointer;
-  font-style: italic;
+  box-shadow: 2px 2px 4px 3px #AD343e;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 a {
   text-decoration: none;
   color: inherit;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 2px 2px 2px 2px;
-  border: #E1C699 solid 3px;
-  border-radius: 3px;
-  /*margin: 2% 50% 0 50%;*/
+  border: #F7D002 solid 3px;
 }
 
 a:hover {
-  font-style: italic;
-  border: #ff00ff solid 3px;
+  text-decoration: underline;
   border-radius: 3px;
-  background-color: #ffffff;
+  color: #AD343e;
 }
 
 .activity {
@@ -71,5 +83,8 @@ a:hover {
 }
 
 .activity a {
-  font-size: 1.4rem;
+  font-size: 1.9rem;
+  font-weight: 900;
+  width: max-content;
+  animation: slideInFromLeft;
 }
