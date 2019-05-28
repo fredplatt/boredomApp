@@ -39,6 +39,7 @@ li {
 
 button {
   font-size: 1.6rem;
+  font-weight: 600;
   border-radius: 17px;
   border: #454E9E 2px solid;
   width: 30%;
@@ -52,15 +53,6 @@ button {
 button:hover {
   cursor: pointer;
   box-shadow: 2px 2px 4px 3px #AD343e;
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
 
 a {
@@ -86,5 +78,4 @@ a:hover {
   font-size: 1.9rem;
   font-weight: 900;
   width: max-content;
-  animation: slideInFromLeft;
 }

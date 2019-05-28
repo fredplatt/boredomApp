@@ -4,7 +4,7 @@ import Radium, {StyleRoot} from 'radium'
 
 const styles = {
     bounceInRight: {
-        animation: 'y 2s',
+        animation: 'x 0.5s',
         animationName: Radium.keyframes(bounceInRight, 'bounceInRight')
     }
 }
@@ -25,7 +25,7 @@ class Home extends React.Component {
                 .then((data)=>{
                     const thingToDo = (data.activity)
                     this.setState({activity: ''})
-                    this.setState({activity: <a href={"https://www.google.com/search?q=" + thingToDo} style={styles.bounceInRight}>{thingToDo}</a>})
+                    this.setState({activity: <div style={styles.bounceInRight}><a href={"https://www.google.com/search?q=" + thingToDo}>{thingToDo}</a></div>})
                 })
 
         }
