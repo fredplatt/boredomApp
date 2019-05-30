@@ -2,15 +2,6 @@ import React from 'react'
 import './App.css'
 import {BrowserRouter as Router, Route, Link} from "react-router-dom"
 import Home from './components/Home'
-import Educational from './components/Educational'
-import Recreational from './components/Recreational'
-import Social from './components/Social'
-import Diy from './components/Diy'
-import Charity from './components/Charity'
-import Cooking from './components/Cooking'
-import Relaxation from './components/Relaxation'
-import Music from './components/Music'
-import Busywork from './components/Busywork'
 
 function AppRouter() {
   return (
