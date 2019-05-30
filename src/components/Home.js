@@ -25,7 +25,7 @@ class Home extends React.Component {
                 .then((data)=>{
                     const thingToDo = (data.activity)
                     this.setState({activity: ''})
-                    this.setState({activity: <div style={styles.bounceInRight}><a href={"https://www.google.com/search?q=" + thingToDo}>{thingToDo}</a></div>})
+                    this.setState({activity: <div style={styles.bounceInRight}><a href={"https://www.google.com/search?q=" + thingToDo} target="_blank" rel="noopener noreferrer">{thingToDo}</a></div>})
                 })
 
         }
