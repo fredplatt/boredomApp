@@ -20,7 +20,7 @@ class Home extends React.Component {
     render() {
         const getThingToDo = () => {
 
-            fetch('http://www.boredapi.com/api/activity/')
+            fetch('http://www.boredapi.com/api/activity' + this.props.target)
                 .then((data)=>{return data.json()})
                 .then((data)=>{
                     const thingToDo = (data.activity)

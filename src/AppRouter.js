@@ -1,6 +1,5 @@
-import React from 'react';
-import logo from './logo.png';
-import './App.css';
+import React from 'react'
+import './App.css'
 import {BrowserRouter as Router, Route, Link} from "react-router-dom"
 import Home from './components/Home'
 import Educational from './components/Educational'
@@ -54,16 +53,18 @@ function AppRouter() {
             </ul>
           </nav>
 
-          <Route path="/" exact component={Home}/>
-          <Route path="/educational/" component={Educational} />
-          <Route path="/recreational/" component={Recreational} />
-          <Route path="/social/" component={Social} />
-          <Route path="/diy/" component={Diy} />
-          <Route path="/charity/" component={Charity} />
-          <Route path="/cooking/" component={Cooking} />
-          <Route path="/relaxation/" component={Relaxation} />
-          <Route path="/music/" component={Music} />
-          <Route path="/busywork/" component={Busywork} />
+          <React.Fragment>
+          <Route path="/" exact render={(props) => <Home {...props} target={'/'} />} />
+          <Route path="/educational/" render={(props) => <Home {...props} target={'?type=education'} />} />
+          <Route path="/recreational/" render={(props) => <Home {...props} target={'?type=recreational'} />} />
+          <Route path="/social/" render={(props) => <Home {...props} target={'?type=social'} />} />
+          <Route path="/diy/" render={(props) => <Home {...props} target={'?type=diy'} />} />
+          <Route path="/charity/" render={(props) => <Home {...props} target={'?type=charity'} />} />
+          <Route path="/cooking/" render={(props) => <Home {...props} target={'?type=cooking'} />} />
+          <Route path="/relaxation/" render={(props) => <Home {...props} target={'?type=relaxation'} />} />
+          <Route path="/music/" render={(props) => <Home {...props} target={'?type=music'} />} />
+          <Route path="/busywork/" render={(props) => <Home {...props} target={'?type=busywork'} />} />
+          </React.Fragment>
         </div>
       </Router>
   );

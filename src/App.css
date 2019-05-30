@@ -2,57 +2,61 @@
 
 body {
   font-family: "Lucida Grande";
-  background-color: #F7D002;
-  color: #454E9E;
+  background-color: #454E9E;
+  color: #ED6C31;
   font-weight: bold;
+  background-image:  url("./logo.png");
+  background-position: 95% 120px;
+  background-repeat: no-repeat;
 }
 
 h1 {
   font-size: 3rem;
-  margin: 40px 20px 20px 20px;
-  border-bottom: #454E9E 3px solid;
+  margin: 40px 20px 30px 30px;
+  border-bottom: #ED6C31 3px solid;
 }
 
 nav {
-  text-align: right;
-  padding-bottom: 5px;
+  text-align: left;
 }
 
 nav h3 {
-  margin-right: 30px;
+  margin: 0 0 10px 30px;
   font-style: italic;
   font-size: 1.5rem;
 }
 
 ul {
-  float: right;
-  margin: 0 20px 30px 0;
-  border-bottom: #454E9E 2px solid;
+  float: left;
+  margin: 0 20px 30px 30px;
+  border-bottom: #ED6C31 2px solid;
+  padding: 0 0 10px 0;
 }
 
 li {
   list-style: none;
   float: left;
   margin-right: 20px;
-  padding-bottom: 6px;
 }
 
 button {
   font-size: 1.6rem;
   font-weight: 600;
   border-radius: 17px;
-  border: #454E9E 2px solid;
   width: 30%;
   height: 100px;
-  text-align: center;
-  margin: 2% 0 6% 0;
-  background-color: #AD343e;
-  color: #F7D002;
+  margin: 5% 0 3% 0;
+  background-color: #D7598B;
+  color: #FCC219;
 }
 
 button:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 4px 3px #AD343e;
+  box-shadow: 2px 2px 4px 3px #FFFFFF;
+}
+
+button:focus {
+  outline: 0;
 }
 
 a {
@@ -61,21 +65,24 @@ a {
   text-align: center;
   font-size: 1.1rem;
   padding: 2px 2px 2px 2px;
-  border: #F7D002 solid 3px;
 }
 
 a:hover {
   text-decoration: underline;
   border-radius: 3px;
-  color: #AD343e;
+  color: #FCC219;
 }
 
 .activity {
-  text-align: center;
+  margin: 0 0 0 30px;
+}
+
+.activity div {
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .activity a {
   font-size: 1.9rem;
   font-weight: 900;
-  width: max-content;
 }
