@@ -8,6 +8,7 @@ body {
   background-image:  url("./logo.png");
   background-position: 95% 120px;
   background-repeat: no-repeat;
+  text-shadow: 1px 1px 1px #D7598B;
 }
 
 h1 {
@@ -41,11 +42,11 @@ li {
 
 button {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 17px;
   width: 30%;
   height: 100px;
-  margin: 5% 0 3% 0;
+  margin: 40px 0 40px 0;
   background-color: #D7598B;
   color: #FCC219;
 }
@@ -74,7 +75,10 @@ a:hover {
 }
 
 .activity {
-  margin: 0 0 0 30px;
+  margin: 120px 30px 0 30px;
+  /*background-color: rgba(255, 255, 255, 0.3);*/
+  /*border-radius: 17px;*/
+  padding: 15px 15px 35px 15px;
 }
 
 .activity div {
@@ -85,4 +89,5 @@ a:hover {
 .activity a {
   font-size: 1.9rem;
   font-weight: 900;
+  text-shadow: 2px 2px 2px #D7598B;
 }
