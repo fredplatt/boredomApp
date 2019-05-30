@@ -51,16 +51,16 @@ main:focus {
 
 .bm-burger-button {
   position: fixed;
-  width: 50px;
-  height: 50px;
-  right: 30px;
-  top: 37px;
-  background-color: #ED6C31;
+  width: 40px;
+  height: 40px;
+  right: 45px;
+  top: 45px;
+  background-color: #FCC219;
   background-image: url("hamburger.png");
-  background-size: 35px;
+  background-size: 30px;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 18px;
+  border-radius: 10px;
   border: #FFFFFF 1px solid;
 }
 
@@ -81,6 +81,10 @@ main button {
 
 .bm-cross-button {
   background-color: #FCC219;
+  background-image: url("cross-symbol.png");
+  background-position: center;
+  background-size: 10px;
+  background-repeat: no-repeat;
   border-radius: 12px;
   border: #FFFFFF 1px solid;
 }
